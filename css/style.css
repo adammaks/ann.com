@@ -9,13 +9,13 @@ html, body {
         position: relative;
             display: grid;
             grid-template-columns: repeat(50, 1fr);
-            grid-template-rows: repeat(50, 1fr);
+            grid-template-rows: repeat(40, 1fr);
         overflow: hidden;
     }
     #video {
         min-width: 100%;
         min-height: 100%;
-        top: 60%;
+        top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
         position: absolute;
@@ -63,7 +63,7 @@ html, body {
             justify-content: center;
             align-items: center;
             grid-column: 7 / 25;
-            grid-row: 23 / 30;
+            grid-row: 13 / 20;
     }
     .text-head-2{
         color: #ffed00;
@@ -74,7 +74,7 @@ html, body {
             justify-content: center;
             align-items: center;
             grid-column: 18 / 25;
-            grid-row: 27 / 31;
+            grid-row: 17 / 21;
     }
     .text-head-3{
         color: #fff;
@@ -85,7 +85,7 @@ html, body {
             justify-content: center;
             align-items: center;
             grid-column: 23 / 30;
-            grid-row: 29 / 34;
+            grid-row: 19 / 24;
     }
     .head h4{
         text-align: center;
@@ -96,14 +96,14 @@ html, body {
             justify-content: center;
             align-items: center;
             grid-column: 1 / -1;
-            grid-row: 45 / 45;
+            grid-row: 35 / 35;
     }
     .button-head{
             display: grid;
             justify-content: center;
             align-items: center;
             grid-column: 1 / -1;
-            grid-row: 48/ 48;
+            grid-row: 38/ 38;
     }
     .head .url-head-1{
         height: 15px;
