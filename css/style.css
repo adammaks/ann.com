@@ -34,7 +34,7 @@ html, body {
             justify-content: center;
             align-items: center;
             grid-column: 1 / -1;
-            grid-row: 1 / 1;
+            grid-row: 2 / 2;
     }
     .head nav ul{
         margin: 10px 0px;
@@ -55,37 +55,40 @@ html, body {
     }
     .head nav li:hover{border-bottom: 1px solid #fff;transition-delay: 0.2s;}
     .text-head-1{
+        margin: 0px;
+        padding: 0px;
         color: #fff;
         font-family: arial;
         text-align: center;
         font-size: 80px;
-        line-height: 0px;
             justify-content: center;
             align-items: center;
             grid-column: 7 / 25;
-            grid-row: 13 / 20;
+            grid-row: 16 / 16;
     }
     .text-head-2{
+        margin: 0px;
+        padding: 0px;
         color: #ffed00;
         font-size: 80px;
         text-align: center;
         font-family: sans-serif;
-        line-height: 0px;
             justify-content: center;
             align-items: center;
             grid-column: 18 / 25;
-            grid-row: 17 / 21;
+            grid-row: 20 / 20;
     }
     .text-head-3{
+        margin: 0px;
+        padding: 0px;
         color: #fff;
         font-family: arial;
         text-align: center;
         font-size: 80px;
-        line-height: 0px;
             justify-content: center;
             align-items: center;
             grid-column: 23 / 30;
-            grid-row: 19 / 24;
+            grid-row: 24 / 24;
     }
     .head h4{
         text-align: center;
