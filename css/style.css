@@ -15,33 +15,39 @@ html, body {
     #video {
         min-width: 100%;
         min-height: 100%;
-        top: 55%;
+        top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-53%, -45%);
         position: absolute;
         z-index: -1;
     }
+    .head nav{
+            display: inline-grid;
+            grid-column:  1 / -1;
+            grid-row: 1 / 1;
+            justify-self: center;
+            align-self: center;
+            grid-column-gap: 15px;
+    }
     .head img{
         width: 80px;
-            grid-column: 1 / 19;
+            grid-column: 1 / 1;
             grid-row: 1 / 1;
             justify-self: end;
             align-self: center;
     }
-    .head nav{
-            display: grid;
-            grid-column:  19 / -1;
-            grid-row: 1 / 1;
-            justify-self: start;
-            align-self: center;
-    }
     .head nav ul{
+        width: 100%;
         margin: 0px 20px;
         padding: 0px;
+            grid-column: 2 / 2;
+            grid-row: 1 / 1;
+            justify-self: center;
+            align-self: center;
     }
     .head nav li{
         text-align: center;
-        padding: 0px 30px;
+        padding: 0px 20px;
         padding-bottom: 10px;
         display: inline;
         transition-delay: 0.2s;
