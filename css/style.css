@@ -5,11 +5,11 @@ html, body {
     .head{
         background: #00000038;
         min-width: 100%;
-        max-height: 100vh;
+        min-height: 100vh;
         position: relative;
             display: grid;
             grid-template-columns: repeat(50, 1fr);
-            grid-template-rows: repeat(40, 1fr);
+            grid-template-rows: repeat(10, 1fr);
         overflow: hidden;
     }
     #video {
@@ -21,23 +21,23 @@ html, body {
         position: absolute;
         z-index: -1;
     }
-    .head h2{
-        color: #ddd;
-        text-align: center;
-            justify-content: center;
-            align-items: center;
-            grid-column: 1 / -1;
+    .head img{
+        width: 80px;
+            grid-column: 1 / 19;
             grid-row: 1 / 1;
+            justify-self: end;
+            align-self: center;
     }
     .head nav{
             display: grid;
-            justify-content: center;
-            align-items: center;
-            grid-column: 1 / -1;
-            grid-row: 2 / 2;
+            grid-column:  19 / -1;
+            grid-row: 1 / 1;
+            justify-self: start;
+            align-self: center;
     }
     .head nav ul{
-        margin: 10px 0px;
+        margin: 0px 20px;
+        padding: 0px;
     }
     .head nav li{
         text-align: center;
@@ -50,6 +50,7 @@ html, body {
     .head nav li a{
         font-size: 13px;
         color: #fff;
+        font-family: sans-serif;
         text-decoration: none;
         text-transform: uppercase;
     }
@@ -64,7 +65,7 @@ html, body {
             justify-content: center;
             align-items: center;
             grid-column: 7 / 25;
-            grid-row: 16 / 16;
+            grid-row: 4 / 5;
     }
     .text-head-2{
         margin: 0px;
@@ -75,8 +76,8 @@ html, body {
         font-family: sans-serif;
             justify-content: center;
             align-items: center;
-            grid-column: 18 / 25;
-            grid-row: 20 / 20;
+            grid-column: 20 / 25;
+            grid-row: 5 / 6;
     }
     .text-head-3{
         margin: 0px;
@@ -87,8 +88,8 @@ html, body {
         font-size: 80px;
             justify-content: center;
             align-items: center;
-            grid-column: 23 / 30;
-            grid-row: 24 / 24;
+            grid-column: 24 / 30;
+            grid-row: 6 / 7;
     }
     .head h4{
         text-align: center;
@@ -99,14 +100,14 @@ html, body {
             justify-content: center;
             align-items: center;
             grid-column: 1 / -1;
-            grid-row: 35 / 35;
+            grid-row: 9 / 9;
     }
     .button-head{
             display: grid;
             justify-content: center;
             align-items: center;
             grid-column: 1 / -1;
-            grid-row: 38/ 38;
+            grid-row: 10 / 10;
     }
     .head .url-head-1{
         height: 15px;
