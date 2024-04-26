@@ -70,11 +70,12 @@ html, body {
     padding: 0px;
     color: #fff;
     font-family: arial;
+    font-weight: 600;
     text-align: center;
     font-size: 80px;
-        justify-content: center;
-        align-items: center;
-        grid-column: 7 / 25;
+        justify-self: start;
+        align-self: center;
+        grid-column: 10 / 25;
         grid-row: 4 / 5;
 }
 .text-head-2{
@@ -82,23 +83,25 @@ html, body {
     padding: 0px;
     color: #ffed00;
     font-size: 80px;
+    font-weight: 1000;
     text-align: center;
     font-family: sans-serif;
-        justify-content: center;
-        align-items: center;
-        grid-column: 20 / 25;
+        justify-self: start;
+        align-self: center;
+        grid-column: 21 / 26;
         grid-row: 5 / 6;
 }
 .text-head-3{
     margin: 0px;
     padding: 0px;
     color: #fff;
-    font-family: arial;
+    font-family: sans-serif;
+    font-weight: 600;
     text-align: center;
     font-size: 80px;
-        justify-content: center;
-        align-items: center;
-        grid-column: 24 / 30;
+        justify-self: start;
+        align-self: center;
+        grid-column: 18 / 20;
         grid-row: 6 / 7;
 }
 .head h4{
@@ -159,3 +162,79 @@ transition: 0.7s;
         grid-row: 1 / 1;
 }
 .head .url-head-2:hover{border: 2px solid #efeb15;background: #efeb15;color: #333;transition: 0.7s;}
+
+/*tablet head*/
+@media screen and (max-width: 1024px) {
+    #video {
+        top: 50%;
+        left: 50%;
+        transform: translate(-53%, -33%);
+    }
+    .text-head-1{
+        font-size: 80px;
+            justify-self: center;
+            align-self: center;
+            grid-column: 1 / -1;
+            grid-row: 4 / 5;
+    }
+    .text-head-2{
+            justify-self: center;
+            align-self: center;
+            grid-column: 1 / -1;
+            grid-row: 5 / 5;
+    }
+    .text-head-3{
+            justify-self: center;
+            align-self: center;
+            grid-column: 1 / -1;
+            grid-row: 6 / 6;
+    }
+}
+/*mobile head*/
+@media screen and (max-width: 670px) {
+        .head img{
+        width: 60px;
+            grid-column: 1 / -1;
+            grid-row: 1 / 1;
+            justify-self: center;
+            align-self: center;
+    }
+    .head nav ul{
+        margin: 0px 0px;
+        padding: 0px;
+            grid-column: 1 / -1;
+            grid-row: 2 / 2;
+            justify-self: center;
+            align-self: center;
+    }
+        .head nav li{
+            text-align: center;
+            padding: 5px;
+        }
+    #video {
+        top: 50%;
+        left: 50%;
+        transform: translate(-53%, -33%);
+    }
+    .text-head-1{
+        font-size: 45px;
+            justify-self: center;
+            align-self: center;
+            grid-column: 1 / -1;
+            grid-row: 5 / 5;
+    }
+    .text-head-2{
+        font-size: 45px;
+            justify-self: center;
+            align-self: center;
+            grid-column: 1 / -1;
+            grid-row: 6 / 6;
+    }
+    .text-head-3{
+        font-size: 45px;
+            justify-self: center;
+            align-self: center;
+            grid-column: 1 / -1;
+            grid-row: 7 / 7;
+    }
+}
