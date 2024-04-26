@@ -9,7 +9,7 @@ html, body {
 }
 .head{
     background: #00000038;
-    min-height: 100vh;
+    height: 100vh;
     position: relative;
         display: grid;
         grid-template-columns: repeat(50, 1fr);
