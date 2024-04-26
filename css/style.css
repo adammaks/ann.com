@@ -218,21 +218,21 @@ transition: 0.7s;
         transform: translate(-53%, -33%);
     }
     .text-head-1{
-        font-size: 45px;
+        font-size: 40px;
             justify-self: center;
             align-self: center;
             grid-column: 1 / -1;
             grid-row: 5 / 5;
     }
     .text-head-2{
-        font-size: 45px;
+        font-size: 40px;
             justify-self: center;
             align-self: center;
             grid-column: 1 / -1;
             grid-row: 6 / 6;
     }
     .text-head-3{
-        font-size: 45px;
+        font-size: 40px;
             justify-self: center;
             align-self: center;
             grid-column: 1 / -1;
