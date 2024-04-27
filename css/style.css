@@ -73,18 +73,20 @@ html, body {
     font-family: arial;
     font-weight: 600;
     text-align: center;
-    font-size: 80px;
+    font-size: 140px;
+    line-height: 140px;
         justify-self: start;
-        align-self: center;
-        grid-column: 10 / 25;
+        align-self: end;
+        grid-column: 5 / 20;
         grid-row: 4 / 5;
 }
 .text-head-2{
     margin: 0px;
     padding: 0px;
     color: #ffed00;
-    font-size: 80px;
+    font-size: 160px;
     font-weight: 1000;
+    line-height: 140px;
     text-align: center;
     font-family: sans-serif;
         justify-self: start;
@@ -98,10 +100,11 @@ html, body {
     color: #fff;
     font-family: sans-serif;
     font-weight: 600;
+    line-height: 150px;
     text-align: center;
-    font-size: 80px;
+    font-size: 140px;
         justify-self: start;
-        align-self: center;
+        align-self: start;
         grid-column: 18 / 20;
         grid-row: 6 / 7;
 }
@@ -109,7 +112,7 @@ html, body {
     text-align: center;
     color: #fff;
     font-size: 13px;
-    font-family: arrial;
+    font-family: sans-serif;
     text-transform: uppercase;
         justify-content: center;
         align-items: center;
