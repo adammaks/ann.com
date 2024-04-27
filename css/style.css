@@ -225,20 +225,20 @@ transition: 0.7s;
             justify-self: center;
             align-self: center;
             grid-column: 1 / -1;
-            grid-row: 5 / 5;
+            grid-row: 4 / 7;
     }
     .text-head-2{
-        font-size: 40px;
+        font-size: 55px;
             justify-self: center;
             align-self: center;
             grid-column: 1 / -1;
-            grid-row: 6 / 6;
+            grid-row: 5 / 8;
     }
     .text-head-3{
         font-size: 40px;
             justify-self: center;
             align-self: center;
-            grid-column: 1 / -1;
-            grid-row: 7 / 7;
+            grid-column: 13 / 20;
+            grid-row: 5 / 10;
     }
 }
