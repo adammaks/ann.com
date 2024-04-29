@@ -22,9 +22,9 @@ html, body {
 #video {
     width: 100vw;
     min-height: 100%;
-    top: 50%;
+    top: 0%;
     left: 50%;
-    transform: translate(-50%, -45%);
+    transform: translate(-50%, -15%);
     position: absolute;
     z-index: -1;
     min-height: -webkit-fill-available;
@@ -92,9 +92,9 @@ html, body {
     line-height: 140px;
     text-align: center;
     font-family: sans-serif;
-        justify-self: start;
+        justify-self: end;
         align-self: center;
-        grid-column: 6 / 16;
+        grid-column: 2 / 21;
         grid-row: 5 / 6;
 }
 .text-head-3{
@@ -108,7 +108,7 @@ html, body {
     font-size: 140px;
         justify-self: start;
         align-self: start;
-        grid-column: 25 / 45;
+        grid-column: 22 / -1;
         grid-row: 5 / 6;
 }
 .head h4{
