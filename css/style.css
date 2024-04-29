@@ -18,11 +18,11 @@ html, body {
     overflow: hidden;
 }
 #video {
-    min-width: 100%;
-    min-height: 100%;
+    width: 100%;
+    min-height: 100vh;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -45%);
+    transform: translate(-50%, -40%);
     position: absolute;
     z-index: -1;
 }
