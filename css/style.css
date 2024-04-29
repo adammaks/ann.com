@@ -1,11 +1,12 @@
 html, body {
     margin:0;
     padding:0;
-}
+    }
 .wrapper{
     min-height: 100vh;
     overflow: hidden;
     position: relative;
+    min-height: -webkit-fill-available;
 }
 .head{
     padding: 0px 10px;
@@ -16,6 +17,7 @@ html, body {
         grid-template-columns: repeat(50, 1fr);
         grid-template-rows: repeat(10, 1fr);
     overflow: hidden;
+    min-height: -webkit-fill-available;
 }
 #video {
     width: 100vw;
@@ -25,6 +27,7 @@ html, body {
     transform: translate(-50%, -45%);
     position: absolute;
     z-index: -1;
+    min-height: -webkit-fill-available;
 }
 .head nav{
         display: inline-grid;
