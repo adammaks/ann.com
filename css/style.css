@@ -108,7 +108,7 @@ html, body {
     font-size: 140px;
         justify-self: start;
         align-self: start;
-        grid-column: 23 / 45;
+        grid-column: 25 / 45;
         grid-row: 5 / 6;
 }
 .head h4{
@@ -185,7 +185,7 @@ transition: 0.7s;
             grid-row: 4 / 5;
     }
     .text-head-2{
-        font-size: 120px;
+        font-size: 110px;
             justify-self: center;
             align-self: center;
             grid-column: 3 / 25;
@@ -195,7 +195,7 @@ transition: 0.7s;
         font-size: 90px;
             justify-self: center;
             align-self: center;
-            grid-column: 27 / 50;
+            grid-column: 28 / 50;
             grid-row: 5 / 5;
     }
 }
