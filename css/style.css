@@ -18,11 +18,11 @@ html, body {
     overflow: hidden;
 }
 #video {
-    width: 100%;
-    min-height: 100vh;
+    width: 100vw;
+    min-height: 100%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, -45%);
     position: absolute;
     z-index: -1;
 }
@@ -172,7 +172,7 @@ transition: 0.7s;
     #video {
         top: 50%;
         left: 50%;
-        transform: translate(-53%, -33%);
+        transform: translate(-50%, -43%);
     }
     .text-head-1{
         font-size: 90px;
@@ -220,7 +220,7 @@ transition: 0.7s;
     #video {
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -48%);
+        transform: translate(-50%, -50%);
     }
     .text-head-1{
         font-size: 38px;
