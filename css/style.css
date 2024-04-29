@@ -220,7 +220,7 @@ transition: 0.7s;
     #video {
         top: 50%;
         left: 50%;
-        transform: translate(-53%, -33%);
+        transform: translate(-50%, -48%);
     }
     .text-head-1{
         font-size: 38px;
