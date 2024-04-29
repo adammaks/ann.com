@@ -20,7 +20,7 @@ html, body {
     min-height: -webkit-fill-available;
 }
 #video {
-    width: 115vw;
+    width: 100vw;
     min-height: 100%;
     top: 50%;
     left: 50%;
@@ -173,6 +173,7 @@ transition: 0.7s;
 /*tablet head*/
 @media screen and (max-width: 1024px) {
     #video {
+        width: 115vw;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -43%);
@@ -221,6 +222,7 @@ transition: 0.7s;
             padding: 5px;
         }
     #video {
+        width: 115vw;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
