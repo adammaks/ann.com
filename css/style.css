@@ -22,7 +22,7 @@ html, body {
     min-height: 100%;
     top: 50%;
     left: 50%;
-    transform: translate(-53%, -45%);
+    transform: translate(-50%, -45%);
     position: absolute;
     z-index: -1;
 }
