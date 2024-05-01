@@ -437,7 +437,8 @@ background-position: 0% 50%;
         top: 0px;
         left: 0px;
         width: 100%;
-        padding-bottom: 20px;
+        position: static;
+        background: none;
     }
     .head nav ul{
         margin: 0px 0px;
@@ -515,6 +516,14 @@ background-position: 0% 50%;
         font-family: arial;
             grid-column: 1 / -1;
             grid-row: 1 / 1;
+    }
+    .about-me-inst{
+        justify-self: start;
+        align-self: start;
+        gap: 0px;
+    }
+    .about-me-inst > img{
+        width: 70%;
     }
     .footer > p{
         font-size: 15px;
