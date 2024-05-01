@@ -32,6 +32,7 @@ html, body {
 }
 .head nav{
     top: 0px;
+    left: 0px;
     width: 100%;
     background: #0000006b;
         display: inline-grid;
