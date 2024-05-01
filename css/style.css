@@ -464,6 +464,9 @@ background-position: 0% 50%;
             grid-column: 1 / -1;
             grid-row: 1 / -1;
     }
+    .wrapper-about-me{
+        padding: 40px;
+    }
     .text-about-me{
         font-size: 16px;
         font-family: arial;
