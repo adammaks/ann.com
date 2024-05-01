@@ -241,7 +241,7 @@ background-position: 0% 50%;
 }
 .wrapper-about-me{
     width: 100%;
-    padding: 150px;
+    padding: 150px 350px;
     overflow: hidden;
     position: relative;
     box-sizing: border-box;
@@ -463,9 +463,6 @@ background-position: 0% 50%;
             align-self: center;
             grid-column: 1 / -1;
             grid-row: 1 / -1;
-    }
-    .wrapper-about-me{
-        padding: 40px;
     }
     .text-about-me{
         font-size: 16px;
