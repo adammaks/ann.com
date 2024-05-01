@@ -345,6 +345,12 @@ background-position: 0% 50%;
             grid-column: 27 / -1;
             grid-row: 5 / 8;
     }
+    .head .url-head-1{
+        padding: 20px;
+    }
+    .head .url-head-2{
+        padding: 20px;
+    }
     .gradient > p {
         margin: 0px 10%;
         padding: 0px;
