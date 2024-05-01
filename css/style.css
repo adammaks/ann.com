@@ -434,18 +434,9 @@ background-position: 0% 50%;
     }
     .head nav{
         top: 0px;
+        left: 0px;
         width: 100%;
         padding-bottom: 20px;
-        background: #0000006b;
-            display: inline-grid;
-            grid-column:  1 / -1;
-            grid-row: 1 / 1;
-            justify-self: center;
-            align-self: center;
-            justify-content: center;
-            grid-column-gap: 15px;
-        position: fixed;
-        z-index: 2;
     }
     .head nav ul{
         margin: 0px 0px;
