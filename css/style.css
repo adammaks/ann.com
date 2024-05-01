@@ -132,7 +132,7 @@ html, body {
 .head .url-head-1{
     height: 15px;
     margin: 10px;
-    padding: 20px;
+    padding: 20px 30px;
     border: 2px solid #efeb15;
     border-radius: 10px;
     text-align: center;
@@ -153,7 +153,7 @@ transition: 0.7s;
 .head .url-head-2{
     height: 15px;
     margin: 10px;
-    padding: 20px;
+    padding: 20px 30px;
     border: 2px solid #fff;
     border-radius: 10px;
     text-align: center;
