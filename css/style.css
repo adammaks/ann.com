@@ -245,94 +245,125 @@ background-position: 0% 50%;
     transform: translate(-50%, -35%);
     position: absolute;
     z-index: -1;
-    min-height: -webkit-fill-available;
 }
 .wrapper-about-me{
     width: 100%;
-    display: grid;
-    min-height: 450px;
-    padding: 150px 25%;
+    padding: 0% 15%;
     overflow: hidden;
     position: relative;
     box-sizing: border-box;
+    justify-items: center;
 }
 .about-me{
+    margin: 100px auto;
     width: 100%;
-    display: grid;
-    color: #fff;
-        grid-template-columns: repeat( 40, 1fr);
-        grid-template-rows: 2fr 1fr;
-        justify-self: center;
-        align-items: center;
-}
-.text-about-me{
-    font-size: 22px;
-    font-family: arial;
-        grid-column: 1 / -1;
-        grid-row: 1 / 1;
-}
-.about-me-inst{
-    width: 100%;
-    display: inline-grid;
-        grid-template-columns: 120px 1fr;
-        grid-column: 1 / -1;
-        grid-row: 2 / 2;
-        justify-content: start;
-        align-content: start;
-    grid-gap: 10px;
     overflow: hidden;
 }
-.about-me-inst > img{
+.one-block-about-me{
     width: 100%;
-    border-radius: 100px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+        grid-column: 1 / -1;
+        grid-row: 1 / 1;
+        justify-self: center;
+        align-self: center;
+    position: relative;
+}
+.video-about-me{
+    width: 100%;
+    min-height: 650px;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
         grid-column: 1 / 1;
         grid-row: 1 / 1;
         justify-self: start;
-        align-self: center;
+        align-self: start;
+    transform: scale(1 , 1);
 }
-.about-me-inst > h5{
-    margin: 0px 0px 50px 10px;
-    font-size: 14px;
-    font-family: arial;
-        grid-column: 2 / -1;
-        grid-row: 1 / 1;
-        justify-self: start;
-        align-self: end;
-}
-.about-me-inst > h6{
-    margin: 0px 0px 20px 10px;
-    font-size: 14px;
-    font-family: arial;
-        grid-column: 2 / -1;
-        grid-row: 1 / 1;
-        justify-self: start;
-        align-self: end;
-}
-.wrapper-about-me > span{
-    width: 80px;
-    height: 80px;
-    padding: 24px 0px;
-    color: #333;
-    font-family: arial;
-    font-size: 25px;
-    text-align: center;
-    background: #ffffff9c;
-    border-radius: 50px;
-    box-sizing: border-box;
-    position: absolute;
-    bottom: 10%;
-    right: 10%;
-    cursor: default;
-}
-#video3 {
-    width: 100vw;
-    min-height: 100%;
-    top: 0%;
+#video3{
+    width: 100%;
+    top: 50%;
     left: 50%;
-    transform: translate( -50%, -25%);
     position: absolute;
     z-index: -1;
-    min-height: -webkit-fill-available;
+    transform: translate(-50%, -50%);
+}
+.one-block-about-me > p.about-name{
+    margin: 0px;
+    font-size: 150px;
+    font-family: arial;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+        grid-column: 2 / 2;
+        grid-row: 1 / 1;
+        justify-self: center;
+        align-self: start;
+}
+.one-block-about-me > p.about-text{
+    margin: 0px 20px;
+    font-size: 15px;
+    font-family: arial;
+    text-align: justify;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+        grid-column: 2 / 2;
+        grid-row: 1 / 1;
+        justify-self: center;
+        align-self: end;
+}
+.two-block-about-me{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+        grid-column: 1 / -1;
+        grid-row: 2 / 2;
+        justify-self: center;
+        align-self: center;
+    position: relative;
+}
+.two-block-about-me > p.about-name{
+    margin: 20px 0px;
+    font-size: 150px;
+    font-family: arial;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+        grid-column: 1 / -1;
+        grid-row: 1 / 1;
+        justify-self: start;
+        align-self: start;
+}
+.two-block-about-me > p.about-text{
+    margin: 0px;
+    font-size: 15px;
+    font-family: arial;
+    text-align: justify;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+        grid-column: 1 / 1;
+        grid-row: 2 / 2;
+        justify-self: start;
+        align-self: end;
+}
+.three-block-about-me{
+    width: 100%;
+        grid-column: 1 / -1;
+        grid-row: 3 / 3;
+        justify-self: center;
+        align-self: center;
+}
+.three-block-about-me > p.about-text{
+    margin: 150px 0px;
+    font-size: 15px;
+    font-family: arial;
+    text-align: justify;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+        grid-column: 1 / -1;
+        justify-self: center;
+        align-self: center;
 }
 .footer{
     width: 100%;
@@ -408,20 +439,60 @@ background-position: 0% 50%;
             grid-row: 1 / -1;
     }
     .wrapper-about-me{
-        padding: 50px 60px;
+        width: 100%;
+        padding: 40px;
     }
-    .text-about-me{
-        font-size: 20px;
+    .about-me{
+        margin: 0px;
+        padding: 0px;
+    }
+    .one-block-about-me > p.about-name{
+    margin: 0px;
+    font-size: 120px;
+    font-family: arial;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+        grid-column: 2 / 2;
+        grid-row: 1 / 1;
+        justify-self: center;
+        align-self: start;
+    }
+    .one-block-about-me > p.about-text{
+        margin: 0px 20px;
+        font-size: 13px;
         font-family: arial;
-            grid-column: 1 / -1;
+        text-align: justify;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+            grid-column: 2 / 2;
             grid-row: 1 / 1;
+            justify-self: center;
+            align-self: end;
     }
-    .wrapper-about-me > span{
-       display: none;
+    .two-block-about-me > p.about-name{
+    margin: 0px;
+    font-size: 120px;
+    font-family: arial;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+        justify-self: start;
+        align-self: start;
     }
-    #video3 {
-        width: 115vw;
-        transform: translate(-50%, -25%);
+    .two-block-about-me > p.about-text{
+        margin: 20px 0px;
+        font-size: 13px;
+        font-family: arial;
+        text-align: justify;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+            grid-column: 1 / 1;
+            grid-row: 2 / 2;
+            justify-self: center;
+            align-self: end;
     }
 }
 /*mobile head*/
@@ -465,13 +536,6 @@ background-position: 0% 50%;
         left: 50%;
         transform: translate(-50%, -20%);
     }
-    #video3 {
-        width: 115vw;
-        min-height: 100%;
-        top: 0%;
-        left: 50%;
-        transform: translate(-50%, -0%);
-    }
     .text-head-1{
         font-size: 38px;
             justify-self: center;
@@ -511,19 +575,65 @@ background-position: 0% 50%;
             grid-column: 1 / -1;
             grid-row: 1 / -1;
     }
-    .text-about-me{
-        font-size: 16px;
-        font-family: arial;
-            grid-column: 1 / -1;
-            grid-row: 1 / 1;
+    .wrapper-about-me{
+        width: 100%;
+        padding: 40px;
     }
-    .about-me-inst{
-        justify-self: start;
+    .about-me{
+        margin: 0px;
+        padding: 0px;
+    }
+    .video-about-me{
+        grid-column: 1 / -1;
+        grid-row: 2 / 2;
+    }
+    .one-block-about-me > p.about-name{
+    margin: 0px;
+    font-size: 100px;
+    font-family: arial;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+        grid-column: 1 / -1;
+        grid-row: 1 / 1;
+        justify-self: center;
         align-self: start;
-        gap: 0px;
     }
-    .about-me-inst > img{
-        width: 70%;
+    .one-block-about-me > p.about-text{
+        margin: 0px 20px;
+        font-size: 13px;
+        font-family: arial;
+        text-align: justify;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+            grid-column: 1 / -1;
+            grid-row: 3 / 3;
+            justify-self: center;
+            align-self: end;
+    }
+    .two-block-about-me > p.about-name{
+    margin-top: 40px;
+    font-size: 40px;
+    font-family: arial;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+        grid-column: 1 / -1;
+        grid-row: 1 / 1;
+        justify-self: center;
+        align-self: start;
+    }
+    .two-block-about-me > p.about-text{
+        margin: 20px 0px;
+        font-size: 13px;
+        font-family: arial;
+        text-align: justify;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+            grid-column: 1 / -1;
+            grid-row: 2 / 2;
+            justify-self: center;
+            align-self: end;
     }
     .footer > p{
         font-size: 15px;
