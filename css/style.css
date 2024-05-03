@@ -349,21 +349,21 @@ background-position: 0% 50%;
 }
 .three-block-about-me{
     width: 100%;
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: 100%;
         grid-column: 1 / -1;
         grid-row: 3 / 3;
         justify-self: center;
         align-self: center;
+    position: relative;
 }
 .three-block-about-me > p.about-text{
-    margin: 150px 0px;
     font-size: 15px;
     font-family: arial;
     text-align: justify;
     letter-spacing: 3px;
     text-transform: uppercase;
-        grid-column: 1 / -1;
-        justify-self: center;
-        align-self: center;
 }
 .footer{
     width: 100%;
@@ -446,6 +446,9 @@ background-position: 0% 50%;
         margin: 0px;
         padding: 0px;
     }
+    .one-block-about-me > .video-about-me{
+        min-height: 400px;
+    }
     .one-block-about-me > p.about-name{
     margin: 0px;
     font-size: 120px;
@@ -494,9 +497,12 @@ background-position: 0% 50%;
             justify-self: center;
             align-self: end;
     }
+    .three-block-about-me > p.about-text{
+        font-size: 13px;
+    }
 }
 /*mobile head*/
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 768px) {
     .head img{
         width: 60px;
             grid-column: 1 / -1;
@@ -577,33 +583,38 @@ background-position: 0% 50%;
     }
     .wrapper-about-me{
         width: 100%;
-        padding: 40px;
+        padding: 20px;
     }
     .about-me{
         margin: 0px;
         padding: 0px;
     }
     .video-about-me{
+        min-height: 380px;
         grid-column: 1 / -1;
         grid-row: 2 / 2;
     }
     .one-block-about-me > p.about-name{
-    margin: 0px;
-    font-size: 100px;
+    margin: 20px;
+    font-size: 2.5em;
     font-family: arial;
     font-weight: 600;
     letter-spacing: 5px;
+    text-align: center;
     text-transform: uppercase;
         grid-column: 1 / -1;
         grid-row: 1 / 1;
         justify-self: center;
         align-self: start;
     }
+    .one-block-about-me > p.about-name::after {
+        content: " Дубенкина";
+    }
     .one-block-about-me > p.about-text{
-        margin: 0px 20px;
+        margin: 20px 0px;
         font-size: 13px;
         font-family: arial;
-        text-align: justify;
+        text-align: left;
         letter-spacing: 3px;
         text-transform: uppercase;
             grid-column: 1 / -1;
@@ -612,22 +623,28 @@ background-position: 0% 50%;
             align-self: end;
     }
     .two-block-about-me > p.about-name{
-    margin-top: 40px;
-    font-size: 40px;
-    font-family: arial;
-    font-weight: 600;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-        grid-column: 1 / -1;
-        grid-row: 1 / 1;
-        justify-self: center;
-        align-self: start;
+    display: none;
     }
     .two-block-about-me > p.about-text{
         margin: 20px 0px;
         font-size: 13px;
         font-family: arial;
-        text-align: justify;
+        text-align: left;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+            grid-column: 1 / -1;
+            grid-row: 2 / 2;
+            justify-self: center;
+            align-self: end;
+    }
+    .three-block-about-me{
+        margin: 0px;
+    }
+    .three-block-about-me > p.about-text{
+        margin: 20px 0px;
+        font-size: 13px;
+        font-family: arial;
+        text-align: left;
         letter-spacing: 3px;
         text-transform: uppercase;
             grid-column: 1 / -1;
