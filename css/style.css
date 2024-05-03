@@ -598,6 +598,7 @@ background-position: 0% 50%;
         padding: 0px;
     }
     .one-block-about-me{
+        margin-top: 20px;
             grid-template-columns: 55% 45%;
     }
     .video-about-me{
@@ -613,7 +614,7 @@ background-position: 0% 50%;
     }
     .one-block-about-me > p.about-name{
     margin: 10px 10px;
-    font-size: 45px;
+    font-size: 48px;
     font-family: arial;
     font-weight: 600;
     letter-spacing: 5px;
@@ -641,7 +642,7 @@ background-position: 0% 50%;
             align-self: end;
     }
     .two-block-about-me > p.about-name{
-        font-size: 50px;
+        font-size: 48px;
         margin-top: 20px;
     }
     .two-block-about-me > p.about-text{
