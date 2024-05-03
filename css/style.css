@@ -597,20 +597,23 @@ background-position: 0% 50%;
         margin: 0px;
         padding: 0px;
     }
+    .one-block-about-me{
+            grid-template-columns: 55% 45%;
+    }
     .video-about-me{
-        max-height: 280px;
+        max-height: 259px;
         grid-column: 1 / 1;
         grid-row: 1 / 1;
         overflow: hidden;
         position: relative;
     }
     #video3{
-        width: 130%;
-        height: 100%;
+        width: 111%;
+        height: auto;
     }
     .one-block-about-me > p.about-name{
     margin: 10px 10px;
-    font-size: 50px;
+    font-size: 45px;
     font-family: arial;
     font-weight: 600;
     letter-spacing: 5px;
