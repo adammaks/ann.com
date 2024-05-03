@@ -273,7 +273,7 @@ background-position: 0% 50%;
 }
 .video-about-me{
     width: 100%;
-    min-height: 650px;
+    height: 550px;
     border-radius: 25px;
     overflow: hidden;
     position: relative;
@@ -449,25 +449,25 @@ background-position: 0% 50%;
         padding: 0px;
     }
     .one-block-about-me > .video-about-me{
-        min-height: 400px;
+        height: 400px;
     }
     .one-block-about-me > p.about-name{
-    margin: 0px;
-    font-size: 120px;
-    font-family: arial;
-    font-weight: 600;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-        grid-column: 2 / 2;
-        grid-row: 1 / 1;
-        justify-self: center;
-        align-self: start;
+        margin: 0px;
+        font-size: 120px;
+        font-family: arial;
+        font-weight: 600;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+            grid-column: 2 / 2;
+            grid-row: 1 / 1;
+            justify-self: center;
+            align-self: start;
     }
     .one-block-about-me > p.about-text{
         margin: 0px 20px;
         font-size: 13px;
         font-family: arial;
-        text-align: justify;
+        text-align: left;
         letter-spacing: 3px;
         text-transform: uppercase;
             grid-column: 2 / 2;
@@ -591,51 +591,59 @@ background-position: 0% 50%;
     }
     .wrapper-about-me{
         width: 100%;
-        padding: 35px;
+        padding: 15px;
     }
     .about-me{
         margin: 0px;
         padding: 0px;
     }
     .video-about-me{
-        min-height: 380px;
-        grid-column: 1 / -1;
-        grid-row: 2 / 2;
+        max-height: 280px;
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+        overflow: hidden;
+        position: relative;
+    }
+    #video3{
+        width: 120%;
+        height: 100%;
     }
     .one-block-about-me > p.about-name{
     margin: 20px;
-    font-size: 2.5em;
+    font-size: 50px;
     font-family: arial;
     font-weight: 600;
     letter-spacing: 5px;
     text-align: center;
     text-transform: uppercase;
-        grid-column: 1 / -1;
+        grid-column: 2 / 2;
         grid-row: 1 / 1;
         justify-self: center;
         align-self: start;
     }
-    .one-block-about-me > p.about-name::after {
+    /*.one-block-about-me > p.about-name::after {
         content: " Дубенкина";
         color: #fcb901;
-    }
+    }*/
     .one-block-about-me > p.about-text{
-        margin: 20px 0px;
-        font-size: 13px;
+        margin-left: 10px;
+        font-size: 11px;
         font-family: arial;
         letter-spacing: 3px;
+        text-align: justify;
         text-transform: uppercase;
-            grid-column: 1 / -1;
-            grid-row: 3 / 3;
+            grid-column: 2 / 2;
+            grid-row: 1 / 1;
             justify-self: center;
             align-self: end;
     }
     .two-block-about-me > p.about-name{
-    display: none;
+        font-size: 50px;
+        margin-top: 20px;
     }
     .two-block-about-me > p.about-text{
         margin: 20px 0px;
-        font-size: 13px;
+        font-size: 11px;
         font-family: arial;
         letter-spacing: 3px;
         text-transform: uppercase;
@@ -649,7 +657,7 @@ background-position: 0% 50%;
     }
     .three-block-about-me > p.about-text{
         margin: 20px 0px;
-        font-size: 13px;
+        font-size: 11px;
         font-family: arial;
         letter-spacing: 3px;
         text-transform: uppercase;
