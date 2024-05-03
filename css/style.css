@@ -69,7 +69,7 @@
     transition-delay: 0.2s;
     cursor: pointer;
 }
-.head nav li a{
+.head nav a{
     font-size: 13px;
     color: #fff;
     font-family: sans-serif;
