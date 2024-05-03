@@ -605,11 +605,11 @@ background-position: 0% 50%;
         position: relative;
     }
     #video3{
-        width: 120%;
+        width: 130%;
         height: 100%;
     }
     .one-block-about-me > p.about-name{
-    margin: 20px;
+    margin: 10px 10px;
     font-size: 50px;
     font-family: arial;
     font-weight: 600;
@@ -618,7 +618,7 @@ background-position: 0% 50%;
     text-transform: uppercase;
         grid-column: 2 / 2;
         grid-row: 1 / 1;
-        justify-self: center;
+        justify-self: start;
         align-self: start;
     }
     /*.one-block-about-me > p.about-name::after {
@@ -629,8 +629,8 @@ background-position: 0% 50%;
         margin-left: 10px;
         font-size: 11px;
         font-family: arial;
-        letter-spacing: 3px;
-        text-align: justify;
+        letter-spacing: 2px;
+        text-align: left;
         text-transform: uppercase;
             grid-column: 2 / 2;
             grid-row: 1 / 1;
@@ -645,7 +645,7 @@ background-position: 0% 50%;
         margin: 20px 0px;
         font-size: 11px;
         font-family: arial;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
         text-transform: uppercase;
             grid-column: 1 / -1;
             grid-row: 2 / 2;
@@ -659,7 +659,7 @@ background-position: 0% 50%;
         margin: 20px 0px;
         font-size: 11px;
         font-family: arial;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
         text-transform: uppercase;
             grid-column: 1 / -1;
             grid-row: 2 / 2;
