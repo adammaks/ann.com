@@ -58,3 +58,32 @@ buttons.forEach(function(btn) {
         highlightButton(btn);
     });
 });
+
+//Скролл текста
+// Функция, чтобы проверить, если элемент находится в видимой части экрана
+function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// Функция, чтобы обработать событие прокрутки страницы
+function handleScroll() {
+    var elements = document.querySelectorAll('.gradient span , .contacts a , .portfolio-block-2 svg , .anim-strela');
+    elements.forEach(function(element) {
+        if (isElementInViewport(element)) {
+            element.style.opacity = '1';
+            element.style.transform = 'translateY(0)'; // Убираем смещение по оси Y
+        }
+    });
+}
+
+// Обработчик события прокрутки страницы
+window.addEventListener('scroll', handleScroll);
+
+// Вызвать обработчик события при загрузке страницы
+window.addEventListener('load', handleScroll);

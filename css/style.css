@@ -49,7 +49,8 @@ body{
     top: 0px;
     left: 0px;
     width: 100%;
-    background: #0000006b;
+    background-color: rgb(30 30 30); /* Начальный цвет фона навигационного меню */
+    transition: background-color 0.5s ease; /* Плавное изменение цвета фона */
         display: inline-grid;
         grid-column:  1 / -1;
         grid-row: 1 / 1;
@@ -235,6 +236,9 @@ transition: 0.7s;
     bottom: 10%;
     right: 10%;
     cursor: default;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: translateY(20px); /* Начальное смещение по оси Y */
 }
 @keyframes gradient {
 0% {
@@ -508,6 +512,9 @@ background-position: 0% 50%;
     background: #1e1e1e;
     color: #fff;
     position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: translateY(20px); /* Начальное смещение по оси Y */
 }
 .portfolio > .portfolio-block-with-video-hover{
     border-radius: 20px;
@@ -590,6 +597,9 @@ background-position: 0% 50%;
     font-weight: normal;
     text-align: left;
     text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: translateY(20px); /* Начальное смещение по оси Y */
     position: relative;
         grid-column: 1 / 1;
         grid-row: 2 / 2;
@@ -645,6 +655,9 @@ background-position: 0% 50%;
     border: 1px solid #fff;
     border-radius: 50px;
     position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: translateY(20px); /* Начальное смещение по оси Y */
 }
 .blocks-url-link-block h5{
     font-size: 15px;
@@ -1243,23 +1256,13 @@ background-position: 0% 50%;
         font-weight: lighter;
         line-height: 2;
     }
-    .footer{
-        height: 200px;
-    }
+    
     .footer > p{
         font-size: 15px;
     }
     .footer > a{
-        margin-top: 0px;
+        margin-top: 10px;
         font-size: 25px;
-        align-self: center;
+        align-self: start;
     }
-    .footer > .footer-powered-by{
-        font-size: 11px;
-        font-family: Chillax;
-        letter-spacing: 4px;
-        text-transform: uppercase;
-            justify-self: center;
-            align-self: center;
-}
 }
