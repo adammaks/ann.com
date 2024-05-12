@@ -1081,8 +1081,8 @@ background-position: 0% 50%;
     .portfolio > .portfolio-blocks-wrapper{
         display: grid;
         position: relative;
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(4, 1fr);
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(3, 1fr);
             gap: 10px;
             grid-column: 1 / -1;
             grid-row: 4 / 4;
@@ -1104,14 +1104,16 @@ background-position: 0% 50%;
         background: #fff;
     }
     .portfolio-block-2 > h6{
+        width: 82%;
         margin: 0px;
         padding-bottom: 0px;
-        font-size: 0.76rem;
+        font-size: 0.55rem;
         letter-spacing: 2px;
         font-weight: normal;
+        line-height: 13px;
         text-decoration: underline;
         text-decoration-color: #fcb90100;
-        text-underline-offset: 10px;
+        text-underline-offset: 2px;
         text-transform: uppercase;
         transition: 0.7s;
     }
@@ -1123,9 +1125,11 @@ background-position: 0% 50%;
         display: none;
     }
     .portfolio-block-2 svg{
-        top: 21.5%;
+        width: 15px;
+        height: 15px;
+        top: 30%;
         right: 8%;
-        padding: 7px;
+        padding: 5px;
         border: 1px solid #fff;
         border-radius: 50px;
         background: #1e1e1e;
@@ -1133,11 +1137,11 @@ background-position: 0% 50%;
         position: absolute;
     }
     .portfolio > .portfolio-block-with-video-hover{
-        height: 500px;
+        height: 450px;
         grid-column: 1 / -1;
         grid-row: 3 / 3;
     }
-    #portfolio_video_1,#portfolio_video_2,#portfolio_video_3,#portfolio_video_4 {
+    #portfolio_video_1,#portfolio_video_2,#portfolio_video_3,#portfolio_video_4,#portfolio-video-5{
         width: 100%;
         height: 100%;
         top: 50%;
@@ -1147,7 +1151,7 @@ background-position: 0% 50%;
         z-index: -1;
         object-fit: cover;
     }
-    #portfolio-video-1,#portfolio-video-2,#portfolio-video-3,#portfolio-video-4{opacity: 0;}
+    #portfolio-video-1,#portfolio-video-2,#portfolio-video-3,#portfolio-video-4,#portfolio-video-5{opacity: 0;}
     .video {
       opacity: 0;
       transition: opacity 0.5s ease;
