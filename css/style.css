@@ -47,8 +47,9 @@ body{
 }
 .head nav{
     top: 0px;
-    left: 0px;
-    width: 100%;
+    left: none;
+    width: 98.8%;
+    border-radius: 0px 0px 20px 20px;
     background-color: rgb(30 30 30); /* Начальный цвет фона навигационного меню */
     transition: background-color 0.5s ease; /* Плавное изменение цвета фона */
         display: inline-grid;
