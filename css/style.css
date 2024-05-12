@@ -540,17 +540,24 @@ background-position: 0% 50%;
         grid-template-columns: repeat(4, 1fr);
         gap: 10px;
 }
-#portfolio_video_1,#portfolio_video_2,#portfolio_video_3,#portfolio_video_4,#portfolio_video_5{
+#portfolio_video_1,
+#portfolio_video_2,
+#portfolio_video_3,
+#portfolio_video_4,
+#portfolio_video_5{
     width: 100%;
     height: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
-    z-index: -1;
     object-fit: cover;
 }
-#portfolio-video-1,#portfolio-video-2,#portfolio-video-3,#portfolio-video-4,#portfolio-video-5{opacity: 0;}
+#portfolio-video-1,
+#portfolio-video-2,
+#portfolio-video-3,
+#portfolio-video-4,
+#portfolio-video-5{opacity: 0;}
 .video {
   opacity: 0;
   transition: opacity 0.5s ease;

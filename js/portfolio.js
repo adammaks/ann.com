@@ -87,3 +87,26 @@ window.addEventListener('scroll', handleScroll);
 
 // Вызвать обработчик события при загрузке страницы
 window.addEventListener('load', handleScroll);
+
+//Пауза видео 
+document.addEventListener("DOMContentLoaded", function() {
+    const videos = document.querySelectorAll(".video");
+
+    videos.forEach(video => {
+        video.addEventListener("mouseenter", function() {
+            videos.forEach(v => {
+                if (!v.paused) {
+                    v.pause();
+                }
+            });
+        });
+
+        video.addEventListener("mouseleave", function() {
+            videos.forEach(v => {
+                if (v.paused) {
+                    v.play();
+                }
+            });
+        });
+    });
+});
