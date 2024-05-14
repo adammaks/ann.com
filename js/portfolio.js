@@ -110,3 +110,46 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+//Скрипт для галереии
+
+// Сами видосы
+// Получаем элемент блока с видео
+var videoBlock = document.getElementById("gallery_video_block_1");
+
+// Получаем все элементы video внутри блока
+var videos = videoBlock.getElementsByTagName("video");
+
+// Обработчик события click для входа/выхода из полноэкранного режима
+function toggleFullscreen(event) {
+  event.preventDefault(); // Предотвращаем действие по умолчанию (пауза)
+  var video = this; // Получаем ссылку на текущее видео
+  var videoContainer = video.closest(".gallery-video-click-full"); // Ищем ближайший родительский блок с классом gallery-video-click-full
+  if (!videoContainer) return; // Если такой блок не найден, выходим из функции
+  if (!videoContainer.classList.contains("fullscreen")) {
+    // Если родительский блок не находится в полноэкранном режиме
+    videoContainer.classList.add("fullscreen"); // Добавляем класс fullscreen к родительскому блоку
+  } else {
+    // Если родительский блок находится в полноэкранном режиме
+    videoContainer.classList.remove("fullscreen"); // Удаляем класс fullscreen у родительского блока
+  }
+}
+
+// Добавляем обработчики событий ко всем видео в блоке
+for (var i = 0; i < videos.length; i++) {
+  var video = videos[i];
+  video.dataset.currentTime = 0; // Устанавливаем атрибут для хранения текущего времени воспроизведения
+  video.addEventListener("click", toggleFullscreen);
+}
+
+// Обработчик события click для выхода из полноэкранного режима при любом клике на странице
+document.addEventListener("click", function(event) {
+  var fullscreenVideos = document.querySelectorAll(".gallery-video-click-full.fullscreen");
+  for (var i = 0; i < fullscreenVideos.length; i++) {
+    var videoContainer = fullscreenVideos[i];
+    if (!videoContainer.contains(event.target)) {
+      videoContainer.classList.remove("fullscreen");
+    }
+  }
+});
+
