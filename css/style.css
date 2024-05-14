@@ -568,6 +568,47 @@ background-position: 0% 50%;
 .video.active {
   opacity: 1;
 }
+.head-gallery{
+    margin: 10px;
+    padding: 3rem;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0px 0px 10px 1px #00000063;
+    background: #1e1e1e;
+    color: #fff;
+    overflow: hidden;
+    display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+}
+.head-gallery > p{
+    padding-bottom: 1.5rem;
+    font-size: 12px;
+    font-family: Chillax;
+    letter-spacing: 0.5px;
+    font-weight: normal;
+    text-transform: uppercase;
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+        justify-self: start;
+        align-self: center;
+}
+.head-gallery > h4{
+    width: 75%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 4rem;
+    font-family: Chillax-RU;
+    letter-spacing: 2px;
+    line-height: 1;
+    font-weight: normal;
+    text-transform: uppercase;
+        grid-column: 1 / 1;
+        grid-row: 2 / 2;
+        justify-self: start;
+        align-self: center;
+    
+}
 .contacts{
     margin: 10px;
     padding: 3rem;
@@ -886,15 +927,17 @@ background-position: 0% 50%;
     .head nav ul{
         margin: 0px 0px;
         padding: 0px;
+        white-space: nowrap;
             grid-column: 1 / -1;
             grid-row: 2 / 2;
             justify-self: center;
             align-self: center;
     }
-        .head nav li{
-            text-align: center;
-            padding: 5px;
-        }
+    .head nav li{
+        font-size: 11px;
+        text-align: center;
+        padding: 5px;
+    }
     #video {
         width: 115vw;
         top: 50%;
@@ -941,7 +984,7 @@ background-position: 0% 50%;
         margin: 0px 5%;
         padding: 0px;
         color: #fff;
-        font-size: 20px;
+        font-size: 18px;
         font-family: Chillax-RU;
         text-align: center;
             justify-self: center;
@@ -950,10 +993,11 @@ background-position: 0% 50%;
             grid-row: 1 / -1;
     }
     .gradient > span {
-        width: 60px;
-        height: 60px;
-        padding: 15px;
-        font-size: 22px;
+        bottom: 20px;
+        width: 50px;
+        height: 50px;
+        padding: 12px;
+        font-size: 20px;
     }
     .wrapper-about-me{
         width: 100%;
