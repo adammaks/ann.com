@@ -112,6 +112,22 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 //Скрипт для галереии
+
+//Меню кнопки преключает блоки
+function showGallery(index) {
+    // Скрыть все блоки галереи
+    let galleryBlocks = document.querySelectorAll('.gallery-block');
+    galleryBlocks.forEach(block => {
+        block.style.display = 'none';
+    });
+
+    // Показать выбранный блок галереи
+    let selectedBlock = document.querySelector('.gallery-block-' + index);
+    if (selectedBlock) {
+        selectedBlock.style.display = 'grid';
+    }
+}
+//Сама галерея
 document.addEventListener('DOMContentLoaded', () => {
     const galleryBlocks = document.querySelectorAll('.gallery-block');
 
@@ -272,4 +288,3 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
-
