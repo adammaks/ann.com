@@ -887,7 +887,7 @@ background-position: 0% 50%;
     line-height: 1;
 }
 .footer{
-    height: 300px;
+    padding: 4rem 0px;
     margin: 10px;
     border-radius: 20px;
     display: grid;
@@ -895,7 +895,7 @@ background-position: 0% 50%;
     overflow: hidden;
 }
 .footer > p{
-    margin: 0px;
+    margin: 20px 0px;
     color: #fff;
     font-family: Chillax-RU;
     font-size: 20px;
@@ -903,7 +903,7 @@ background-position: 0% 50%;
         align-self: end;
 }
 .footer > a{
-    margin: 0px;
+    margin: 20px 0px;
     color: #bf8f0b;
     font-family: Chillax;
     font-size: 40px;
@@ -1245,10 +1245,10 @@ background-position: 0% 50%;
         position: relative;
         background: #fff;
         box-shadow: 0px 0px 10px 1px #00000063;
-            grid-column: 1 / -1;
-            grid-row: 2 / 2;
-            justify-self: start;
-            align-self: start;
+        grid-column: 1 / -1;
+        grid-row: 2 / 2;
+        justify-self: start;
+        align-self: start;
     }
     .portfolio-block-1 > .portfolio-block-1-name{
         padding-bottom: 2rem;
@@ -1630,5 +1630,111 @@ background-position: 0% 50%;
     right: 15px;
     position: absolute;
     background: #1e1e1ed4;
+    }
+}
+
+/*mini-mobile adaptive*/
+@media screen and (max-width: 325px) {
+    .head nav li {
+        font-size: 10px;
+        text-align: center;
+        padding: 2px;
+    }
+    .text-head-1{
+        font-size: 34px;
+            justify-self: center;
+            align-self: center;
+            grid-column: 1 / -1;
+            grid-row: 4 / 7;
+    }
+    .text-head-2{
+        font-size: 43px;
+            justify-self: end;
+            align-self: center;
+            grid-column: 1 / 26;
+            grid-row: 5 / 8;
+    }
+    .text-head-3{
+        font-size: 32px;
+            justify-self: start;
+            align-self: center;
+            grid-column: 27 / -1;
+            grid-row: 5 / 8;
+    }
+    .head .url-head-1 {
+        font-size: 10px;
+        padding: 6px 4px;
+    }
+    .head .url-head-2 {
+        font-size: 10px;
+        padding: 6px 4px;
+    }
+    .gradient > p {
+        font-size: 14px;
+    }
+    .one-block-about-me {
+        margin-top: 20px;
+        grid-template-columns: 55% 50%;
+    }
+    .one-block-about-me > p.about-name {
+        font-size: 35px;
+    }
+    .two-block-about-me > p.about-name {
+        font-size: 35px;
+    }
+    .portfolio {
+        margin: 0px;
+        padding: 0px 0px 10px 0px;
+        overflow: hidden;
+        gap: 0px;
+    }
+    .portfolio > div{
+        margin: 5px 10px;
+        padding: 0px 0px 10px 0px;
+        overflow: hidden;
+    }
+    .portfolio > .portfolio-block-1 {
+        padding: 10px;
+    }
+    .portfolio > .portfolio-blocks-wrapper {
+        gap: 0px;
+    }
+    .portfolio-block-2 {
+        margin: 5px;
+        padding: 1rem 1rem 1rem 1rem;
+        border-radius: 10px;
+        position: relative;
+        box-shadow: 0px 0px 6px 1px #00000063;
+    }
+    .portfolio-block-2 > h6 {
+        width: 80%;
+        margin: 0px;
+        padding-bottom: 0px;
+        font-size: 0.5rem;
+        letter-spacing: 2px;
+        font-weight: normal;
+        line-height: 12px;
+        font-size: 7px;
+    }
+    .gallery {
+        margin: 10px;
+        padding: 1rem 0.5rem;
+        border-radius: 20px;
+        position: relative;
+        background: #1e1e1e;
+        box-shadow: 0px 0px 10px 1px #00000063;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(auto, 200px) 1fr;
+    }
+    .footer {
+        padding: 1rem 0px;
+    }
+    .footer > p {
+        font-size: 12px;
+    }
+    .footer > a {
+        margin-top: 10px;
+        font-size: 20px;
     }
 }
