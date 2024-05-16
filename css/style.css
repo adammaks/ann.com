@@ -614,6 +614,7 @@ background-position: 0% 50%;
     padding: 3rem;
     border-radius: 20px;
     position: relative;
+    overflow: hidden;
     background: #1e1e1e;
     box-shadow: 0px 0px 10px 1px #00000063;
     display: grid;
@@ -627,14 +628,8 @@ background-position: 0% 50%;
         align-self: start;
 }
 .gallery >  nav > li{
-    margin: 0px 5px;
-    padding-bottom: 5px;
+    margin: 0px px;
     display: inline;
-    border: 1px solid #3330;
-    transition: 0.7s;
-}
-.gallery >  nav > li:hover{
-    border-bottom: 1px solid #fcb901;
 }
 .gallery >  nav > li > a{
     padding: 10px;
@@ -643,6 +638,13 @@ background-position: 0% 50%;
     font-family: Chillax-RU;
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: normal;
+    text-decoration: underline;
+    text-decoration-color: #fcb90100;
+    text-underline-offset: 10px;
+}
+.gallery >  nav > li > a:hover{
+    text-decoration-color: #fcb901;
 }
 .gallery-block,
 .gallery-block-2,
@@ -1042,6 +1044,12 @@ background-position: 0% 50%;
     }
     .three-block-about-me > p.about-text{
         font-size: 13px;
+    }
+    .gallery >  nav > li > a{
+        padding: 5px;
+        font-size: 11px;
+        color: #fff;
+        font-family: Chillax-RU;
     }
 }
 /*mobile adaptive*/
@@ -1526,5 +1534,53 @@ background-position: 0% 50%;
         margin-top: 10px;
         font-size: 25px;
         align-self: start;
+    }
+}
+
+/*mobile adaptive gallery*/
+@media screen and (max-width: 425px) {
+    .gallery{
+        margin: 10px;
+        padding: 1rem 0.5rem;
+        border-radius: 20px;
+        position: relative;
+        background: #1e1e1e;
+        box-shadow: 0px 0px 10px 1px #00000063;
+        display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: minmax(auto, 120px) 1fr;
+    }
+    .gallery >  nav{
+            grid-column: 1 / -1;
+            grid-row: 1 / 1;
+            justify-self: center;
+            align-self: start;
+        text-align: center;
+    }
+    .gallery >  nav > li{
+        display: inline-block;
+        margin: 5px 0px;
+        padding: 5px;
+    }
+    .gallery >  nav > li > a{
+        padding: 5px;
+        font-size: 10px;
+        color: #fff;
+        font-family: Chillax-RU;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: normal;
+        text-decoration: underline;
+        text-decoration-color: #fcb90100;
+        text-underline-offset: 10px;
+        letter-spacing: 0.6px;
+    }
+    .gallery-svg{
+    padding: 16px 12px 0px 12px;
+    border-radius: 10px;
+    bottom: 30px;
+    right: 15px;
+    position: absolute;
+    background: #1e1e1ed4;
     }
 }
