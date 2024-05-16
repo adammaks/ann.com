@@ -1,3 +1,44 @@
+//Кэширование с использованием Service Workers Вы можете использовать Service Workers для кэширования ресурсов на стороне клиента. Регистрация Service Worker:
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('js/service-worker.js').then(function(registration) {
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }).catch(function(error) {
+      console.log('ServiceWorker registration failed: ', error);
+    });
+  }
+//Функиця lazyload
+document.addEventListener("DOMContentLoaded", function() {
+    const lazyVideos = document.querySelectorAll("video.lazyload");
+  
+    if ("IntersectionObserver" in window) {
+      const lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            const lazyVideo = entry.target;
+  
+            // Получаем ссылку из атрибута data-src
+            const videoSource = lazyVideo.querySelector('source');
+            const videoSrc = videoSource.getAttribute('data-src');
+  
+            if (videoSrc) {
+              lazyVideo.src = videoSrc;
+              lazyVideo.load();
+              lazyVideo.classList.remove("lazyload");
+              lazyVideoObserver.unobserve(lazyVideo);
+            } else {
+              console.error('No data-src attribute found for video', lazyVideo);
+            }
+          }
+        });
+      });
+  
+      lazyVideos.forEach(function(lazyVideo) {
+        lazyVideoObserver.observe(lazyVideo);
+      });
+    }
+  });
+  
+//*------------*/  
 document.addEventListener("DOMContentLoaded", function() {
     const videos = document.querySelectorAll(".video");
     const videoLinks = document.querySelectorAll(".video-link");
