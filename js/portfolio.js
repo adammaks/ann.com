@@ -329,3 +329,18 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    var videos = document.querySelectorAll(".gallery-block-video video");
+
+    videos.forEach(function(videoElement) {
+        // Обработчик события canplaythrough будет вызван, когда видео будет готово к воспроизведению без перерывов
+        videoElement.addEventListener("canplaythrough", function() {
+            var videoBlock = videoElement.parentElement;
+            var loadingContainer = videoBlock.querySelector(".loading-container");
+            
+            // Скрываем элемент загрузки после того, как видео будет готово к воспроизведению
+            loadingContainer.style.display = "none";
+        });
+    });
+});
