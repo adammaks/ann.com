@@ -13,10 +13,9 @@ document.addEventListener("DOMContentLoaded", function() {
     if ("IntersectionObserver" in window) {
       const lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
         entries.forEach(function(entry) {
-          if (entry.isIntersecting) {
-            const lazyVideo = entry.target;
+          const lazyVideo = entry.target;
   
-            // Получаем ссылку из атрибута data-src
+          if (entry.isIntersecting) {
             const videoSource = lazyVideo.querySelector('source');
             const videoSrc = videoSource.getAttribute('data-src');
   
@@ -28,6 +27,10 @@ document.addEventListener("DOMContentLoaded", function() {
             } else {
               console.error('No data-src attribute found for video', lazyVideo);
             }
+          } else {
+            if (!lazyVideo.classList.contains("lazyload")) {
+              lazyVideo.pause();
+            }
           }
         });
       });
@@ -37,6 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     }
   });
+  
   
 //*------------*/  
 document.addEventListener("DOMContentLoaded", function() {
