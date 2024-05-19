@@ -344,3 +344,59 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const threshold = 10; // Пороговое значение для определения горизонтального движения
+    let isDragging = false;
+    let startX, startY, startScrollLeft;
+
+    // Функция для начала перемещения
+    const startDragging = (e) => {
+        isDragging = true;
+        startX = e.pageX || e.touches[0].pageX;
+        startY = e.pageY || e.touches[0].pageY;
+        startScrollLeft = scrollContainer.scrollLeft;
+    };
+
+    // Функция для окончания перемещения
+    const stopDragging = () => {
+        isDragging = false;
+    };
+
+    // Функция для перемещения
+    const handleDragging = (e) => {
+        if (isDragging) {
+            const currentX = e.pageX || e.touches[0].pageX;
+            const deltaX = currentX - startX;
+
+            // Определение направления перемещения
+            if (Math.abs(deltaX) > threshold) {
+                scrollContainer.scrollLeft = startScrollLeft - deltaX;
+                e.preventDefault(); // Отмена стандартного поведения
+            }
+        }
+    };
+
+    // Получаем контейнер галереи
+    const scrollContainer = document.getElementById('scrollVideo');
+
+    // Добавляем обработчики событий для мыши и сенсорных устройств
+    scrollContainer.addEventListener('mousedown', startDragging);
+    scrollContainer.addEventListener('touchstart', startDragging);
+
+    document.addEventListener('mousemove', handleDragging);
+    document.addEventListener('touchmove', handleDragging);
+
+    document.addEventListener('mouseup', stopDragging);
+    document.addEventListener('touchend', stopDragging);
+
+    // Добавляем обработчик событий для трекпада (дополнительный вариант)
+    scrollContainer.addEventListener('wheel', (e) => {
+        // Проверяем направление прокрутки
+        if (e.deltaX !== 0 || e.wheelDeltaX !== 0) {
+            // Изменяем положение прокрутки горизонтально
+            scrollContainer.scrollLeft += e.deltaX || e.wheelDeltaX;
+            e.preventDefault(); // Отмена стандартного поведения
+        }
+    });
+});
