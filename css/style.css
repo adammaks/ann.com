@@ -470,6 +470,7 @@ background-position: 0% 50%;
     font-weight: lighter;
     line-height: 1.5;
     column-count: 2;
+    column-gap: 30px;
 }
 .portfolio > .portfolio-blocks-wrapper{
     display: grid;
