@@ -1048,15 +1048,16 @@ background-position: 0% 50%;
     }
     .wrapper-about-me{
         width: 100%;
-        padding: 10px;
+        padding: 20px;
     }
     .about-me{
-        margin: 0px;
+        width: 100%;
+        margin: 0px auto;
         padding: 20px;
         box-sizing: border-box;
     }
     .one-block-about-me > .video-about-me{
-        height: 400px;
+        max-height: 300px;
     }
     .one-block-about-me > p.about-name{
         margin: 0px;
@@ -1226,7 +1227,7 @@ background-position: 0% 50%;
             grid-template-columns: 55% 45%;
     }
     .video-about-me{
-        max-height: 259px;
+        max-height: 459px;
         grid-column: 1 / 1;
         grid-row: 1 / 1;
         overflow: hidden;
