@@ -475,7 +475,6 @@ background-position: 0% 50%;
     display: grid;
     position: relative;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr);
         gap: 10px;
         grid-column: 1 / 1;
         grid-row: 2 / 2;
