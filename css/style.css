@@ -1048,7 +1048,7 @@ background-position: 0% 50%;
     }
     .wrapper-about-me{
         width: 100%;
-        padding: 10px;
+        padding: 20px;
     }
     .about-me{
         width: 100%;
@@ -1057,7 +1057,7 @@ background-position: 0% 50%;
         box-sizing: border-box;
     }
     .one-block-about-me > .video-about-me{
-        max-height: 300px;
+        max-height: 450px;
     }
     .one-block-about-me > p.about-name{
         margin: 0px;
