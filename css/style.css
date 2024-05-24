@@ -1009,7 +1009,7 @@ background-position: 0% 50%;
     #video2 {
         width: 115vw;
         min-height: 100%;
-        top: 0%;
+        top: 43%;
         left: 50%;
         transform: translate(-50%, -43%);
     }
@@ -1057,7 +1057,7 @@ background-position: 0% 50%;
         box-sizing: border-box;
     }
     .one-block-about-me > .video-about-me{
-        max-height: 450px;
+        max-height: 500px;
     }
     .one-block-about-me > p.about-name{
         margin: 0px;
@@ -1116,6 +1116,14 @@ background-position: 0% 50%;
         color: #fff;
         font-family: Chillax-RU;
     }
+    .blocks-url-link{
+    margin: 10px;
+    overflow: hidden;
+    display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        gap: 10px;
+}
 }
 /*mobile adaptive*/
 @media screen and (max-width: 768px) {
