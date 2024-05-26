@@ -1,3 +1,10 @@
+//Блок с рекомендацией о впн 
+document.getElementById('close-link').addEventListener('click', function(event) {
+    event.preventDefault();
+    var alertBlock = document.getElementById('alert-block');
+    alertBlock.classList.add('hidden');
+});
+
 //Кэширование с использованием Service Workers Вы можете использовать Service Workers для кэширования ресурсов на стороне клиента. Регистрация Service Worker:
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('js/service-worker.js').then(function(registration) {

@@ -14,6 +14,67 @@ body{
     font-family: Chillax-RU;
     src: url(Chillax-RU.ttf);
 }
+.alert-block{
+    width: 95%;
+    box-sizing: border-box;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    padding: 10px 50px;
+    border-radius: 20px;
+    background: #1e1e1ede;
+    color: #fff;
+    font-family: Chillax-RU;
+    position: fixed;
+    z-index: 3;
+    display: grid;
+}
+.alert-block > h2{
+    margin: 20px 0px 0px 0px;
+    padding-bottom: 10px;
+    font-size: 0.8rem;
+    font-family: Chillax-RU;
+    letter-spacing: 3px;
+    font-weight: normal;
+    text-decoration: underline;
+    text-decoration-color: #fcb90100;
+    text-underline-offset: 10px;
+    text-transform: uppercase;
+        justify-self: center;
+}
+.alert-block > p{
+    margin: 5px 0px;
+    font-size: 0.7rem;
+    font-family: Chillax-RU;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    line-height: 1.5;
+}
+.alert-block > a{
+    margin: 2px;
+    padding: 12px 10px 10px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    background: #fff;
+    color: #1e1e1e;
+    font-size: 10px;
+    font-family: Chillax-RU;
+    text-decoration: none;
+    transition: 0.7s;
+        justify-self: center;
+}
+
+.alert-block > a:hover{
+    background: #1e1e1e;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.alert-block.hidden {
+    display: none;
+    pointer-events: none;
+}
 .wrapper{
     height: 100vh;
     margin: 10px;
