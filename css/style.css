@@ -1614,7 +1614,7 @@ background-position: 0% 50%;
 }
 
 /*mobile adaptive gallery*/
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 525px) {
     .gallery{
         margin: 10px;
         padding: 1rem 0.5rem;
