@@ -6,6 +6,10 @@
 body{
     background: #eee;
 }
+::selection{
+    background: #ffc600;
+    color: #fff;
+}
 @font-face {
     font-family: Chillax;
     src: url(Chillax.ttf);
@@ -37,7 +41,7 @@ body{
     letter-spacing: 3px;
     font-weight: normal;
     text-decoration: underline;
-    text-decoration-color: #fcb90100;
+    text-decoration-color: #ffc60000;
     text-underline-offset: 10px;
     text-transform: uppercase;
         justify-self: center;
@@ -172,7 +176,7 @@ body{
 .text-head-2{
     margin: 0px;
     padding: 0px;
-    color: #fcb901;
+    color: #ffc600;
     font-size: 160px;
     font-weight: 1000;
     line-height: 140px;
@@ -218,12 +222,12 @@ body{
 .head .url-head-1{
     margin: 10px;
     padding: 15px 25px 13px;
-    border: 2px solid #fcb901;
+    border: 2px solid #ffc600;
     border-radius: 10px;
     text-align: center;
     text-transform: uppercase;
     color: #333;
-    background: #fcb901;
+    background: #ffc600;
     font-size: 11px;
     font-family: Chillax-RU;
     text-decoration: none;
@@ -252,7 +256,7 @@ transition: 0.7s;
         grid-column: 2 / 2;
         grid-row: 1 / 1;
 }
-.head .url-head-2:hover{border: 2px solid #fcb901;background: #fcb901;color: #1e1e1e;transition: 0.7s;}
+.head .url-head-2:hover{border: 2px solid #ffc600;background: #ffc600;color: #1e1e1e;transition: 0.7s;}
 .gradient{
     margin: 10px;
     padding: 100px 0px;
@@ -521,7 +525,7 @@ background-position: 0% 50%;
     text-transform: uppercase;
 }
 .portfolio-block-1 > h4 span{
-    color: #fcb901;
+    color: #ffc600;
     border-radius: 20px;
 }
 .portfolio-block-1 > .portfolio-block-1-text{
@@ -564,14 +568,14 @@ background-position: 0% 50%;
     letter-spacing: 3px;
     font-weight: normal;
     text-decoration: underline;
-    text-decoration-color: #fcb90100;
+    text-decoration-color: #ffc60000;
     text-underline-offset: 10px;
     text-transform: uppercase;
     transition: 0.7s;
 }
 .video-link.active, .video-link.active h6 {
     text-decoration: underline;
-    text-decoration-color: #fcb901;
+    text-decoration-color: #ffc600;
 }
 .portfolio-block-2 > .portfolio-block-text{
     width: 70%;
@@ -701,11 +705,11 @@ background-position: 0% 50%;
     text-transform: uppercase;
     font-weight: normal;
     text-decoration: underline;
-    text-decoration-color: #fcb90100;
+    text-decoration-color: #ffc60000;
     text-underline-offset: 10px;
 }
 .gallery >  nav > li > a:hover{
-    text-decoration-color: #fcb901;
+    text-decoration-color: #ffc600;
 }
 .gallery-block,
 .gallery-block-2,
@@ -882,7 +886,7 @@ background-position: 0% 50%;
     border-radius: 20px;
     position: relative;
     box-shadow: 0px 0px 10px 1px #00000063;
-    background: #fcb901;
+    background: #ffc600;
     overflow: hidden;
     display: grid;
         grid-template-columns: 1fr;
@@ -1405,7 +1409,7 @@ background-position: 0% 50%;
         text-transform: uppercase;
     }
     .portfolio-block-1 > h4 span{
-        color: #fcb901;
+        color: #ffc600;
         border-radius: 20px;
     }
     .portfolio-block-1 > .portfolio-block-1-text{
@@ -1450,14 +1454,14 @@ background-position: 0% 50%;
         font-weight: normal;
         line-height: 13px;
         text-decoration: underline;
-        text-decoration-color: #fcb90100;
+        text-decoration-color: #ffc60000;
         text-underline-offset: 2px;
         text-transform: uppercase;
         transition: 0.7s;
     }
     .video-link.active, .video-link.active h6 {
         text-decoration: underline;
-        text-decoration-color: #fcb901;
+        text-decoration-color: #ffc600;
     }
     .portfolio-block-2 > .portfolio-block-text{
         display: none;
@@ -1542,7 +1546,7 @@ background-position: 0% 50%;
         border-radius: 20px;
         position: relative;
         box-shadow: 0px 0px 10px 1px #00000063;
-        background: #fcb901;
+        background: #ffc600;
         overflow: hidden;
         display: grid;
             grid-template-columns: 1fr;
@@ -1708,7 +1712,7 @@ background-position: 0% 50%;
         text-transform: uppercase;
         font-weight: normal;
         text-decoration: underline;
-        text-decoration-color: #fcb90100;
+        text-decoration-color: #ffc60000;
         text-underline-offset: 10px;
         letter-spacing: 0.6px;
     }
