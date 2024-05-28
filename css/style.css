@@ -7,7 +7,7 @@ body{
     background: #eee;
 }
 ::selection{
-    background: #ffc600;
+    background: #ffc60075;
     color: #fff;
 }
 @font-face {
