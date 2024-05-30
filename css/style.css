@@ -1066,6 +1066,9 @@ background-position: 0% 50%;
 }
 /*tablet adaptive*/
 @media screen and (max-width: 1024px) {
+    .alert-block{
+        width: 40%;
+    }
     #video {
         width: 115vw;
         top: 50%;
