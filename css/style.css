@@ -19,11 +19,11 @@ body{
     src: url(Chillax-RU.ttf);
 }
 .alert-block{
-    width: 95%;
+    width: 20%;
     box-sizing: border-box;
     bottom: 0%;
-    left: 50%;
-    transform: translate(-50%, -10%);
+    right: 3%;
+    transform: translate(3%, -10%);
     padding: 10px 50px;
     border-radius: 20px;
     background: #1e1e1ede;
@@ -1193,6 +1193,14 @@ background-position: 0% 50%;
 }
 /*mobile adaptive*/
 @media screen and (max-width: 768px) {
+    .alert-block{
+        width: 97%;
+        box-sizing: border-box;
+        bottom: 0%;
+        left: 50%;
+        transform: translate(-50%, -3%);
+        padding: 10px 20px;
+    }
     .wrapper{
         margin-top:10px;
         border-radius: 0px 0px 20px 20px;
@@ -1205,10 +1213,11 @@ background-position: 0% 50%;
             align-self: center;
     }
     .head nav{
-        top: 0px;
-        left: 0px;
+        top: 0%;
+        left: 0%;
+        transform: translate(0% , 0%);
         width: 100%;
-        position: static;
+        position: relative;
         background: none;
     }
     .head nav ul{
