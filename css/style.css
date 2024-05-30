@@ -111,8 +111,9 @@ body{
     min-height: -webkit-fill-available;
 }
 .head nav{
-    top: 0px;
-    left: none;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50% , -0%);
     width: 98.8%;
     border-radius: 0px 0px 20px 20px;
     background-color: rgb(30 30 30); /* Начальный цвет фона навигационного меню */
