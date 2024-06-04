@@ -20,10 +20,10 @@ body{
 }
 .alert-block{
     width: 20%;
-    box-sizing: border-box;
     bottom: 0%;
     right: 3%;
     transform: translate(3%, -10%);
+    box-shadow: 0px 0px 3px 1px #ffffff63;
     padding: 10px 50px;
     border-radius: 20px;
     background: #1e1e1ede;
@@ -1066,9 +1066,6 @@ background-position: 0% 50%;
 }
 /*tablet adaptive*/
 @media screen and (max-width: 1024px) {
-    .alert-block{
-        width: 40%;
-    }
     #video {
         width: 115vw;
         top: 50%;
@@ -1197,9 +1194,9 @@ background-position: 0% 50%;
 /*mobile adaptive*/
 @media screen and (max-width: 768px) {
     .alert-block{
-        width: 97%;
+        width: 90%;
         box-sizing: border-box;
-        bottom: 0%;
+        bottom: 2%;
         left: 50%;
         transform: translate(-50%, -3%);
         padding: 10px 20px;
