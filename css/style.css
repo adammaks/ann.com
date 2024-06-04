@@ -6,6 +6,10 @@
 body{
     background: #eee;
 }
+::webkit-selection{
+    background: #ffc60075;
+    color: #fff;
+}
 ::selection{
     background: #ffc60075;
     color: #fff;
