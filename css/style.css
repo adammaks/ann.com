@@ -30,7 +30,8 @@ body{
     box-shadow: 0px 0px 3px 1px #ffffff63;
     padding: 10px 50px;
     border-radius: 20px;
-    background: #1e1e1ede;
+    background: rgb(0 0 0 / 50%);
+    backdrop-filter: blur(105px);
     color: #fff;
     font-family: Chillax-RU;
     position: fixed;
